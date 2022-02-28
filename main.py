@@ -74,15 +74,15 @@ def process():
             print("Please enter an interger!!!!\n")
             continue
         if choice==1:
-            character=input("Please specify the character:")
+            character=input("Please specify the character:").lower()
             position=input("Please specify the position:")
             add_position_rule(character,int(position))
         elif choice==2:
-            character=input("Please specify the character:")
+            character=input("Please specify the character:").lower()
             position=input("Please specify the position:")
             add_not_in_position_rule(character,int(position))
         elif choice==3:
-            character=input("Please specify the character:")
+            character=input("Please specify the character:").lower()
             add_contain_rule(character)
 
         elif choice==4:
